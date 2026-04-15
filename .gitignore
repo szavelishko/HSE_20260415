@@ -1,61 +1,61 @@
 ```
-# Dependencies
-node_modules/
-
 # Build outputs
 dist/
 build/
 coverage/
 htmlcov/
 
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.yarn-cache/
+.bazel/
+.buck/
+.node-gyp/
+.jscache/
+
 # Environment variables
 .env
 .env.local
 .env.*
+!.env.example
 
-# Python cache
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+.env/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
 
 # Logs
 *.log
-
-# Temporary files
-*.tmp
-*.swp
-*.swo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# IDE files
+# IDE specific
 .vscode/
 .idea/
-
-# Testing
-.mypy_cache/
-.pytest_cache/
-coverage.xml
-
-# Distribution / packaging
-*.tar
-*.tar.gz
-*.zip
-*.gz
-
-# Compiled Binary Files
-*.exe
-*.dll
-*.so
-*.a
-*.o
-*.obj
-*.out
-
-# Venv
-.venv/
-venv/
+*.swp
+*.swo
+*~
 ```
